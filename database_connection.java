@@ -1,0 +1,37 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+/**
+ * connection
+ */
+public class database_connection {
+    
+    Connection con ;
+
+    public  void connection_data(){
+        
+        
+
+        try{
+    
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","rootAsdF@#$");
+    
+            if (con != null){
+                System.out.println("connection successfuly");
+            }else{
+                System.out.println("there is a issue when connection to data base");
+            }
+
+            
+    
+            }catch(Exception er){
+                System.out.println(er.getMessage());
+                
+            }
+
+        }
+
+    }
+            
+
