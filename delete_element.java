@@ -1,3 +1,4 @@
+package connection_data_base;
 import java.sql.*;;
 
 public class delete_element {
@@ -37,6 +38,7 @@ public StringBuilder Check_the_chrachter(){
 return buildd;
 
 }
+
 
 
 

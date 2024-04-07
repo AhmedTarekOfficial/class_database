@@ -1,3 +1,4 @@
+package connection_data_base;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -6,7 +7,7 @@ import java.sql.DriverManager;
  */
 public class database_connection {
     
-    Connection con ;
+    public  Connection con ;
 
     public  void connection_data(){
         
@@ -18,7 +19,9 @@ public class database_connection {
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","rootAsdF@#$");
     
             if (con != null){
-                System.out.println("connection successfuly");
+                
+                System.out.println("connection done ");
+                System.out.print("\033[H\033[2J");
             }else{
                 System.out.println("there is a issue when connection to data base");
             }
@@ -26,7 +29,7 @@ public class database_connection {
             
     
             }catch(Exception er){
-                System.out.println(er.getMessage());
+                System.out.println(er);
                 
             }
 
