@@ -177,7 +177,7 @@ public class Fetch_elements extends database_connection {
     
         builde.append(" FROM " + table_namee + " WHERE ");
         
-        // Assuming colum_conditions and values_conditions have the same size
+        
         for (int i = 0; i < colum_conditions.size(); i++) {
             builde.append(colum_conditions.get(i) + " = ");
             
