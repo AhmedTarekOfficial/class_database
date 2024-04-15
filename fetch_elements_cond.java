@@ -84,7 +84,8 @@ public class fetch_elements_cond {
     
         builder.append(" FROM ").append(table_name).append(" WHERE ");
         
-        // Assuming colum_conditions and values_conditions have the same size
+
+
         for (int i = 0; i < colum_conditions.size(); i++) {
             builder.append(colum_conditions.get(i)).append(" = ");
             
